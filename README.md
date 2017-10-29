@@ -1,7 +1,6 @@
 # CSS Workshop - Personal Page
-==============
 
-In this workshop we will create a personal website. At the end of the last exercise we will have a complete websile:
+In this workshop we will create a personal website. At the end of the last exercise we will have a complete website:
 
 ![Design website personal - about me](img/personal-website-about-me.png)
 
@@ -27,7 +26,7 @@ We just need a [moder browser](https://caniuse.com/#search=css%20grid) and a sim
 
 ## Get the repository
 
-This is the simple way to get the project. It will download all files.
+This is the simple way to get the project, using:
 
 ```sh
 git clone https://github.com/bmnicolae/CSS-Workshop-Personal-Page.git
@@ -35,14 +34,12 @@ git clone https://github.com/bmnicolae/CSS-Workshop-Personal-Page.git
 
 ## Start an exercise
 
-To start working on an exercise go to the exercise folder:
+To start working on an exercise go to the associated folder:
 
 ```sh
 cd src/exercise-1
 ```
-
-and create a new HTML file using [Emmet](https://emmet.io/).
-
+and follow the instructions.
 
 ## Exercise Instructions
 
