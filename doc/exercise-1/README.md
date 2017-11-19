@@ -5,6 +5,7 @@ In this exercise we will create *About Me* page:
 ![Design website personal - About Me](../../img/personal-website-about-me.png)
 
 ## Step 1 - Create *index.html* document
+
 To have a valid HTML document, paste the following template in your new created file:
 
 ```html
@@ -20,6 +21,7 @@ To have a valid HTML document, paste the following template in your new created 
     </body>
 </html>
 ```
+
 ## Step 2 - Create *style.css* file and link it to HTML header
 
 Create a new file (*style.css*).
@@ -29,10 +31,12 @@ To link your css file into a webpage, copy this code into the head of your HTML 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 <link rel="stylesheet" href="style.css">
 ```
+
 ## Step 3 - Embed Google [Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans:400,700) Font
 
 ### Embed Font
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document:
+
+To embed your selected fonts into a webpage, copy this code into the `<head>` of your HTML document:
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -68,7 +72,7 @@ body {
 Use the following HTML markup to create the document content:
 
 ```html
-<div class="about-page-grid">
+<div class="page-grid">
     <main class="about-content">
         <img class="my-avatar" src="../../img/Sunny-Luthra.png" alt="Sunny Luthra">
         <div class="my-info">
@@ -82,7 +86,6 @@ Use the following HTML markup to create the document content:
             <li class="my-list-item"><a  class="my-list-link" href="">Hire me for your next project</a></li>
         </ul>
         <div class="my-social">
-            
         </div>
     </main>
     <footer class="footer">
@@ -94,12 +97,12 @@ Use the following HTML markup to create the document content:
 Apply the following CSS rules to create a new layout for your page:
 
 ```css
-.about-page-grid {
+.page-grid {
     margin: 100px 0;
     display: grid;
     grid-template-columns: 1fr 990px 1fr;
     grid-template-rows: fit-content fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         ". about-content ."
         ". footer .";
 }
@@ -129,7 +132,7 @@ Apply the following CSS rules to *.about-content*:
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-rows: 1fr fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         "my-avatar my-info my-list"
         "my-social my-social my-social";
 }
@@ -171,18 +174,18 @@ Let's add some content into *my-social* section:
  <div class="my-social">
     <div class="my-social-item">
         <i class="fa fa-envelope my-icon" aria-hidden="true"></i>
-        <a href="" class="my-icon-title">sunny@mrova.com</a>     
-        <p class="my-icon-subtitle">Email Address</p>                 
+        <a href="" class="my-icon-title">sunny@mrova.com</a>
+        <p class="my-icon-subtitle">Email Address</p>
     </div>
     <div class="my-social-item">
         <i class="fa fa-facebook my-icon" aria-hidden="true"></i>
-        <a href="" class="my-icon-title">sunny</a>     
-        <p class="my-icon-subtitle">Facebook Profile</p>                 
+        <a href="" class="my-icon-title">sunny</a>
+        <p class="my-icon-subtitle">Facebook Profile</p>
     </div>
     <div class="my-social-item">
         <i class="fa fa-twitter my-icon" aria-hidden="true"></i>
-        <a href="" class="my-icon-title">sunny</a>     
-        <p class="my-icon-subtitle">Twitter Handle</p>                 
+        <a href="" class="my-icon-title">sunny</a>
+        <p class="my-icon-subtitle">Twitter Handle</p>
     </div>
 </div>
 ```
@@ -201,7 +204,7 @@ and now let's style it:
     display: grid;
     grid-template-columns: 45px 1fr ;
     grid-template-rows: 45px fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         "my-icon my-icon-title"
         "my-icon my-icon-subtitle";
 }
@@ -221,7 +224,7 @@ and now let's style it:
 
 ## Step 9 - Final touches
 
-In order to have a prettier view, use the following CSS rules: 
+In order to have a prettier view, use the following CSS rules:
 
 ### Containers
 
@@ -337,5 +340,66 @@ In order to have a prettier view, use the following CSS rules:
     color: #999;
     font-size: 12px;
     margin: 5px 0 0 0;
+}
+```
+
+## Step 10 - Responsive
+
+In order to make our page to look good on all devices (desktops, tablets, and phones) we need to add/modify some css rules on appropriate breakpoints:
+
+### Tablets
+
+```css
+@media (max-width: 990px) {
+    .my-list {
+        display: none;
+    }
+    .page-grid {
+        display: block;
+    }
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr fit-content;
+        grid-template-areas:
+            "my-avatar my-info"
+            "my-social my-social";
+        border-radius: 0;
+    }
+    .footer {
+        border-radius: 0;
+    }
+}
+```
+
+### Phones
+
+```css
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+    .about-content {
+        display: block;
+    }
+    .my-avatar {
+        display: block;
+        margin: 0 auto;
+    }
+    .my-info-title {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .my-info-subtitle {
+        text-align: center;
+    }
+    .my-social {
+        display: block;
+    }
+    .my-social-item {
+        margin-top:10px;
+    }
+    .footer {
+        margin-top: 3px;
+    }
 }
 ```

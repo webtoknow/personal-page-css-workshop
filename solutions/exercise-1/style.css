@@ -11,12 +11,12 @@ body {
     background-size: cover;
 }
 
-.about-page-grid {
+.page-grid {
     margin: 100px 0;
     display: grid;
     grid-template-columns: 1fr 990px 1fr;
     grid-template-rows: fit-content fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         ". about-content ."
         ". footer .";
 }
@@ -42,7 +42,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     grid-template-rows: 1fr fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         "my-avatar my-info my-list"
         "my-social my-social my-social";
     padding: 30px 20px;
@@ -76,7 +76,7 @@ body {
     display: grid;
     grid-template-columns: 45px 1fr ;
     grid-template-rows: 45px fit-content;
-    grid-template-areas: 
+    grid-template-areas:
         "my-icon my-icon-title"
         "my-icon my-icon-subtitle";
     padding: 6px 6px 6px 10px;
@@ -143,3 +143,51 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 990px) {
+    .my-list {
+        display: none;
+    }
+    .page-grid {
+        display: block;
+    }
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr fit-content;
+        grid-template-areas:
+            "my-avatar my-info"
+            "my-social my-social";
+        border-radius: 0;
+    }
+    .footer {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+    .about-content {
+        display: block;
+    }
+    .my-avatar {
+        display: block;
+        margin: 0 auto;
+    }
+    .my-info-title {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .my-info-subtitle {
+        text-align: center;
+    }
+    .my-social {
+        display: block;
+    }
+    .my-social-item {
+        margin-top:10px;
+    }
+    .footer {
+        margin-top: 3px;
+    }
+}
