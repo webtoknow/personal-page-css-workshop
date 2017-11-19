@@ -343,3 +343,5 @@ body {
 }
 
 ```
+
+Move the css file into a separated folder. You should name it *css*.
