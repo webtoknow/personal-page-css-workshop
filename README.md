@@ -44,3 +44,4 @@ and follow the instructions.
 ## Exercise Instructions
 
 * [Exercise 1 - About Me](/doc/exercise-1/)
+* [Exercise 2 - Navigation](/doc/exercise-2/)
