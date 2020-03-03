@@ -1,6 +1,4 @@
 .about-content {
-    grid-area: about-content;
-    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
@@ -8,10 +6,6 @@
     grid-template-areas:
         "my-avatar my-info my-list"
         "my-social my-social my-social";
-    padding: 30px 20px;
-    border: 1px solid #f1f1f1;
-    box-shadow: 0px 6px #c0392b;
-    border-radius: 0px 0px 4px 4px;
 }
 
 .my-avatar {
