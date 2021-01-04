@@ -16,7 +16,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .portfolio-item {
         width: 100%;
         margin-bottom: 20px;

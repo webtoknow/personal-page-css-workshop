@@ -88,10 +88,11 @@ p {
 
 .title {
     margin: 0;
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .subtitle {
@@ -123,7 +124,7 @@ hr {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         background: none;
     }
