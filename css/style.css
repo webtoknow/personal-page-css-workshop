@@ -88,10 +88,11 @@ p {
 
 .title {
     margin: 0;
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .subtitle {
