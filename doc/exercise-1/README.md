@@ -374,7 +374,7 @@ In order to make our page to look good on all devices (desktops, tablets, and ph
 ### Phones
 
 ```css
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         background: none;
     }

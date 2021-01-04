@@ -69,7 +69,7 @@ Let's add or modify some css rules to make look good on all devices:
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .menu {
         margin: 0;
     }
@@ -215,7 +215,7 @@ Let's create `about-style.css` and paste all *About* page related styles:
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about-content {
         display: block;
     }
@@ -319,7 +319,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         background: none;
     }
