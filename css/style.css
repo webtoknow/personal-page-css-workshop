@@ -131,6 +131,12 @@ hr {
     .header {
         display: none;
     }
+    .container {
+        border: none;
+        border-top: 1px solid #ccc;
+        box-shadow: none;
+        border-radius: 0;
+    }
     .menu {
         margin: 0;
     }
